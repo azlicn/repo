@@ -1,0 +1,10 @@
+Layman Scenario: "The Ice Cream Shop Analogy"
+
+Picture CACEIS as a big ice cream order-processing centre. It handles orders for many ice cream shops (investment funds) on behalf of their customers (investors).
+
+The old way (SARA): The centre has used the same cash register system since the 1990s. It's reliable and still processes orders every day. Orders arrive electronically, prices are calculated automatically and every sale is recorded in the customer book. But the register is old and hard to upgrade, and each big shop has its own custom setup. A few gaps have also built up over the years. Staff can change a waiting order without anyone double-checking it. A cancelled order may leave no trace. Closing time isn't always enforced automatically, so a late order can slip through.
+
+The new way (NOVA): The centre is moving to a modern system built in separate parts. Before any orders arrive, the menu, prices list and customer book are kept up to date automatically (Buffer Zone). When an order comes in, the system checks it's valid and arrived before closing time. It groups it with the day's other orders and waits for today's official scoop price before confirming and settling the sale (Orchestrator). Staff follow every order on a live screen, and changes need a proper check and leave a clear record (Pixel NOVA). Receipts and reports are produced and sent out automatically, whether triggered by an event or on a schedule (Reporting).
+
+In reality: Instead of ice cream, these are investment fund transactions (subscriptions, redemptions, switches and transfers), often worth millions of euros. Accuracy, timeliness and regulatory compliance are critical. The "waiting for today's price" step matters most: unlike in a normal shop, a fund investor doesn't know the exact price when placing an order.
+
