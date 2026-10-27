@@ -1,0 +1,33 @@
+FULL STACK DEVELOPER                                  Dec 2025 – Present
+CACEIS — IT Fund Distribution Services                Kuala Lumpur, Malaysia*
+
+Full stack developer on a fund-distribution platform for asset-servicing
+operations, building Angular UIs, NestJS BFF APIs and Kafka streaming
+services on AWS.
+
+• Built the Fund Calendars module from scratch (Angular UI, Kafka streams,
+  deployment), including NAV/cut-off and settlement-date grids, a 5-year
+  date picker, saved filters and CSV export.
+• Delivered the Order Date Simulator with multi-ISIN search, time-zone-aware
+  date/time inputs and full form validation.
+• Built cash-management actions (By-pass / Reject / Recycle, including bulk)
+  across UI, BFF and stream layers, with unit tests.
+• Built Kafka Streams pipelines on AWS MSK that map Debezium change events,
+  and set up OpenSearch indexes.
+• Wrote the team's GitOps branching and deployment rules (dev → qual →
+  pprd → main), now required for all nova-cd projects.
+• Handled 30+ deployments across DEV, QUAL, PPROD and PROD using ArgoCD
+  on Kubernetes.
+
+Tech: Angular, TypeScript, NestJS, Node.js, Kafka, Debezium, OpenSearch,
+AWS (MSK, S3, Aurora), ArgoCD, Kubernetes, GitOps, CI/CD
+
+
+
+SKILLS
+Frontend:   Angular, TypeScript, RxJS, HTML/CSS
+Backend:    NestJS, Node.js, REST APIs, BFF architecture
+Streaming:  Apache Kafka / Kafka Streams, Debezium (CDC), OpenSearch
+Cloud:      AWS — MSK, S3, Aurora, OpenSearch
+DevOps:     ArgoCD, Kubernetes, GitOps, Git, CI/CD pipelines
+Practices:  Agile/Scrum, unit testing, Jira, Confluence
