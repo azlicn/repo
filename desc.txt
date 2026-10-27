@@ -1,0 +1,49 @@
+Here's the revised version with Angular, your AWS work and your start date added.
+Full Stack Developer — CACEIS (IT Fund Distribution Services)
+Dec 2025 – Present · PULSE programme · Meridian Crew squad
+Summary
+Full stack developer on a fund-distribution platform used by asset-servicing operations teams. I build Angular screens, the NestJS BFF (backend-for-frontend) layer and Kafka event-streaming services on AWS, and I deploy releases through DEV, QUAL, PPROD and PROD using GitOps. I work in an Agile/Scrum team with colleagues in Malaysia and Europe.
+Responsibilities
+Frontend (Angular)
+Build and maintain the Angular screens for the Orders, Switches/Transfers, Collect, Cash and Fund Calendars modules, and the Order Date Simulator (ODS).
+Build reusable Angular components: typeahead/autocomplete lookups, From/To date pickers, filter chips, selection panels, data grids with sorting and pagination, loaders and CSV export.
+Build form validation, error handling and time-zone-aware date/time inputs.
+
+BFF (backend-for-frontend)
+Build REST endpoints in NestJS/TypeScript, including the Cash By-pass / Reject / Recycle actions, blocking-reason lookups, locks on actions already in progress, and streamed CSV exports.
+Designed how the BFF translates data labels into different languages (for example, the Fund Calendar "Level" column).
+
+Streaming and data
+Build Kafka stream pipelines on AWS MSK for Fund Calendar data (settlement dates, NAV and cut-off dates). This includes mapping Debezium change events to output formats and adding calendar data.
+Set up OpenSearch indexes and update data-mapping scripts.
+
+Cloud (AWS)
+Set up AWS MSK (Kafka) topics for new services.
+Set up S3 backups and wrote Aurora database scripts to support releases.
+Run deployments with ArgoCD (GitOps) on Kubernetes.
+
+CI/CD and deployments
+Own deployments through DEV, QUAL, PPROD and PROD for many features (about 30–40 deployment tickets).
+Wrote the team's required nova-cd branching and deployment rules: a fixed promotion order (dev → qual → pprd → main), no cross-merges, and separate config files for each environment.
+Wrote the QUAL deployment process guide, set up continuous deployment for new services in DEV, and helped write the release pages for Release 30 and the Calendar Viewer release.
+
+Delivery and collaboration
+Break epics into UI, BFF and stream stories, and estimate them in story points.
+Work with product owners, QA and other squads to fix bugs before production releases.
+
+Key achievements
+Fund Calendars module (built from scratch): set up the Angular UI and stream projects, then built the NAV & Cut-off and Settlement Dates grids, a date picker covering up to 5 years of history, a currency filter, saved filters, CSV export and unit tests.
+Order Date Simulator (ODS): built the input form (ISIN search, transaction type, reception date/time/time zone, settlement currency, site code), the "My selections" panel, validation and the reset action. Also made ISIN lookups pass ISIN names correctly when several ISINs are selected.
+Cash management: built the Blocked-status actions (By-pass / Reject / Recycle, including bulk Recycle) across the UI, BFF and stream layers, with confirmation dialogs and unit tests.
+Orders, Switches and Collect: built the Switch order screen and order date filters. Fixed the expand view for linked orders, status colours and an order-extract reference bug.
+Release process: set the branching standard every nova-cd project must follow, which helps prevent merge conflicts between environment branches.
+Currently: building a generic Angular data-grid component and the basic structure of the CTV (configuration table viewer).
+
+Tech stack
+Frontend: Angular · TypeScript · RxJS
+Backend/BFF: NestJS · Node.js · REST APIs
+Streaming and data: Apache Kafka / Kafka Streams · Debezium (CDC) · OpenSearch
+Cloud (AWS): MSK · S3 · Aurora · OpenSearch
+DevOps: ArgoCD · Kubernetes · GitOps · Git · CI/CD across 4 environments
+Ways of working: Agile/Scrum · Jira · Confluence · unit testing
+Before you use it: none of the sources I read mention RxJS. I added it because most Angular projects use it, so remove it if you didn't work with it. If you want this to fit in fewer lines, cut the Responsibilities section down and keep the full Key achievements list.
